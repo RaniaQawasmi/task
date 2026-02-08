@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="page-header">
+    <div class="header-content">
+    <div class="logo">logo</div>
+    <h1>Student Registration</h1>
+    <p class="subtitle">Join our School</p>
+  </div>
+</header>
+
+<main class="main">
+  <section class="section">
+
+    <form class="registration-form">
+
+    
+      <section class="form-section">
+        <h2>Personal Information</h2>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" placeholder="+962 7X XXX XXXX" required />
+            
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input id="dob" type="date" required />
+          </div>
+        </div>
+
+        <fieldset class="radio-group">
+          <legend>Gender</legend>
+          <label><input type="radio" name="gender" required /> Male</label>
+          <label><input type="radio" name="gender" /> Female</label>
+        </fieldset>
+      </section>
+
+      
+      <section class="form-section">
+        <h2>Academic Information</h2>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="grade">Grade</label>
+            <select id="grade" required>
+              <option value="">Select grade</option>
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6</option>
+              <option>7</option><option>8</option><option>9</option>
+              <option>10</option><option>11</option><option>12</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="schedule">Preferred Schedule</label>
+            <select id="schedule">
+              <option>Morning</option>
+              <option>Afternoon</option>
+              <option>Evening</option>
+            </select>
+          </div>
+        </div>
+
+        <fieldset class="checkbox-group">
+          <legend>Subjects</legend>
+          <label><input type="checkbox" /> Math</label>
+          <label><input type="checkbox" /> Science</label>
+          <label><input type="checkbox" /> English</label>
+          <label><input type="checkbox" /> History</label>
+        </fieldset>
+      </section>
+
+      <!-- Extras -->
+      <section class="form-section">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="photo">Upload Student Photo</label>
+            <input id="photo" type="file" accept="image/*" />
+            <small class="help-text">Images only, max 2MB</small>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Notes</label>
+            <textarea id="notes" maxlength="200"></textarea>
+            <small class="help-text">Maximum 200 characters</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- Actions -->
+      <div class="actions">
+        <button type="submit" class="btn primary">Submit</button>
+        <button type="reset" class="btn secondary">Reset</button>
+      </div>
+
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>International Academy School • 2026</p>
+</footer>
+
+</body>
+</html>
